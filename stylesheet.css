@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.containerhead h2 {
+    font-size: 50px;
+    background-color: #693b3b;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.containerhead {
+    height: 100%;
+    background: #693b3b;
+    overflow: auto;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #693b3b;
+    overflow: auto;
+
+}
+
+.navbar a {
+    float: left;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 80px;
+    text-decoration: underline;
+}
+
+.divcontain {
+    width: 100%
+}
+
+.main1 {
+    float: left;
+    width: 65%;
+    font-size: 20px;
+    padding: 20px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.careerimg1 {
+    width: 300px;
+}
+
+.aside1 {
+    width: 25%;
+    float: left;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
