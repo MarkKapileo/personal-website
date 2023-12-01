@@ -1,76 +1,99 @@
-* {
-    box-sizing: border-box;
-}
-
-.containerhead h2 {
-    font-size: 50px;
-    background-color: #693b3b;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-}
-
-.containerhead {
-    height: 100%;
-    background: #693b3b;
-    overflow: auto;
-}
-
 body {
-    margin: 0;
-    height: 100%;
-    min-height: 100%;
-    background-color: black;
-}
-
-.navbar {
-    width: 100%;
-    background-color: #693b3b;
-    overflow: auto;
-
-}
-
-.navbar a {
-    float: left;
-    padding: 20px;
     color: white;
-    text-decoration: none;
-    width: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 20px;
 }
+/* This is styling for the sliders */
+#image-slider {
+    max-width: 100%;
+  }
 
-.navbar a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 80px;
-    text-decoration: underline;
-}
-
-.divcontain {
-    width: 100%
-}
-
-.main1 {
-    float: left;
-    width: 65%;
-    font-size: 20px;
-    padding: 20px;
-    background-color: white;
-    margin: 30px;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+/* styles for sliders end here */
+.slider-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
     border-radius: 10px;
-}
-
-.careerimg1 {
-    width: 300px;
-}
-
-.aside1 {
-    width: 25%;
-    float: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
-    margin: 10px;
-    padding: 10px;
+
 }
+
+.slides {
+width: 100%;
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+
+.slide {
+width: 50%;
+box-sizing: border-box;
+}
+.slide img {
+width: 100%;
+border-radius: 10px;
+}
+.slider-btn {
+cursor: pointer;
+position: absolute;
+top: 50%;
+font-size: 24px;
+color: #555;
+background: none;
+border: none;
+outline: none;
+}
+
+.prev {
+left: 10px;
+}
+
+.next {
+right: 10px;
+}
+/* nav styles here */
+nav a:hover {
+    color: rgb(127, 150, 255);
+}
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 25px 20px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+    #scrolling-text {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+      }
