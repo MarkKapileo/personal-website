@@ -7,75 +7,22 @@ body {
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
+    background-color: rgb(221, 166, 112);
 }
-/* This is styling for the sliders */
-#image-slider {
-    max-width: 100%;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-/* styles for sliders end here */
-.slider-container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-
-}
-
-.slides {
-width: 100%;
-display: flex;
-transition: transform 0.5s ease-in-out;
-}
-
-
-.slide {
-width: 50%;
-box-sizing: border-box;
-}
-.slide img {
-width: 100%;
-border-radius: 10px;
-}
-.slider-btn {
-cursor: pointer;
-position: absolute;
-top: 50%;
-font-size: 24px;
-color: #555;
-background: none;
-border: none;
-outline: none;
-}
-
-.prev {
-left: 10px;
-}
-
-.next {
-right: 10px;
+h2 {
+    text-align: center;
+    font-size: 50px;
 }
 /* nav styles here */
 nav a:hover {
     color: rgb(127, 150, 255);
 }
     nav {
-        background-color: #333;
+        background-color: rgb(248, 169, 78);
         color: white;
         padding: 25px 20px;
         text-align: center;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
+        overflow: auto;
     }
 
     nav a {
@@ -86,14 +33,22 @@ nav a:hover {
         font-weight: bold;
         transition: color 0.3s ease-in-out;
     }
-    #scrolling-text {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-        color: #333;
+    /* IMAGE TRANSFORM */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 20px;
         text-align: center;
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .gallery img:hover {
+        transform: scale(1.1);
       }

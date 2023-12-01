@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="slidingstyle.css">
+    <script src="slide.js"></script>
     <title>Flipmations</title>
 </head>
 
@@ -14,6 +16,19 @@
         <a href="Portfolio.html">Portfolio</a>
         <a href="About.html">About</a>
     </nav>
+    <div class="content">
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide"><img src="images/Art_1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="images/Art_2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="images/Art_3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="images/Art_4.jpg" alt="Image 4"></div>
+            <div class="slide"><img src="images/Art_5.jpg" alt="Image 5"></div>
+        </div>
+        <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
 </body>
 
 </html>
