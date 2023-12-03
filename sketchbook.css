@@ -1,0 +1,28 @@
+.art-container {
+    display: grid;
+    grid-template-columns: auto;
+    order: 1;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  .sketch-piece {
+    width: 30%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sketch-piece:hover {
+    transform: rotate(5deg);
+  }
+
+  .sketch-piece img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
