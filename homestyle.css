@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bg1 {
+    width: 80%;
+    height: auto;
+  }
+  .rotated-image1 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transform: rotate(15deg);
+  }
+.gridcard {
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
