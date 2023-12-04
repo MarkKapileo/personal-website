@@ -6,6 +6,7 @@
   .bg1 {
     width: 80%;
     height: auto;
+    border-radius: 15px;
   }
   .rotated-image1 {
     width: 100px;
@@ -14,10 +15,13 @@
     transform: rotate(15deg);
   }
 .gridcard {
-    color: white;
+    color: black;
     padding: 5px;
     margin: 5px;
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    background-color: white;
+    border: lightseagreen 5px solid;
+    border-radius: 15px;
 }
