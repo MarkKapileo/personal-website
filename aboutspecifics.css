@@ -1,0 +1,29 @@
+.speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border-radius: .4em;
+    color: black;
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #ffffff;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+.profilepic {
+    border-radius: 10px;
+    
+}
+div.social-links.griditem img {
+    width: 150px;
+    display: inline;
+    padding-left: 350px;
+}
