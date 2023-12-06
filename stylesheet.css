@@ -34,6 +34,10 @@ body {
     width: 15%;
     height: auto;
 }
+.griditem.colspan2.social img {
+    display: inline-block;
+    margin-left: 110px;
+}
  
 h2, h1 {
     text-align: center;
@@ -132,3 +136,35 @@ table {
     font-size: 20px;
     font-weight: bold;
   }
+  /* ABOUT SPECIFICS  */
+  .speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border-radius: .6em;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #ffffff;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+.profilepic {
+    border-radius: 10px;
+    
+}
+div.social-links.griditem img {
+    width: 150px;
+    display: inline;
+    padding-left: 350px;
+}
