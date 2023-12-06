@@ -15,7 +15,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: rgb(131, 71, 131);
-    font-size: 20px;
+    font-size: 25px;
 }
 .colspan2 {
     grid-column: span 2;
@@ -30,15 +30,46 @@ body {
       display: block;
       margin: 0 auto;
 }
-.griditem.colspan2 img {
+.app.griditem.colspan2 img {
     width: 15%;
     height: auto;
 }
-.griditem.colspan2.social img {
-    display: inline-block;
-    margin-left: 110px;
+.prog.griditem img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
 }
- 
+.prog.griditem p {
+text-align: center;
+background-color: white;
+padding: 15px;
+margin: 10px;
+border: black solid 5px;
+color: black;
+border-radius: 15px;
+
+}
+.social-links {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  /* Style individual social links */
+  .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+  }
+  .social-links a img {
+ width: 10%;
+ margin-left: 150px;
+ height: auto;
+ display: inline-block;
+  }
+  .social-links img:hover {
+    transform: scale(1.2);
+  }
 h2, h1 {
     text-align: center;
     font-size: 50px;
@@ -104,6 +135,9 @@ table, th, td {
     font-size: 30px;
     
 }
+td {
+    padding: 10px;
+}
 table {
     margin-left: auto;
     margin-right: auto;
@@ -137,34 +171,21 @@ table {
     font-weight: bold;
   }
   /* ABOUT SPECIFICS  */
-  .speech-bubble {
-	position: relative;
-	background: #ffffff;
-	border-radius: .6em;
-    color: black;
-    padding: 10px;
-    margin: 20px;
-}
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-top-color: #ffffff;
-	border-bottom: 0;
-	border-left: 0;
-	margin-left: -10px;
-	margin-bottom: -20px;
-}
+
 .profilepic {
     border-radius: 10px;
     
 }
-div.social-links.griditem img {
-    width: 150px;
-    display: inline;
-    padding-left: 350px;
+form {
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 10px;
 }
+fieldset {
+    padding: 25px;
+}
+legend {
+    font-size: 25px;
+    font-weight: bold;
+}
+
